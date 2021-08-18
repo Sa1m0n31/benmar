@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Banmar</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
@@ -21,7 +22,7 @@
             Producent siatki ogrodzeniowej i materiałów do pakowania <b>Golub-Dobrzyń, Rypin, Brodnica, Lipno</b>
         </h4>
     </section>
-    <section class="header__section">
+    <section class="header__section d-none d-md-flex">
         <section class="header__callToUs">
             <h5 class="header__callToUs__header">
                 Zadzwoń do nas
@@ -44,7 +45,48 @@
     </section>
 </header>
 <menu class="menu">
-    <ul class="menu__list">
+    <section class="menuMobile d-flex d-md-none">
+        <button class="menu__list__item">
+            <a href="./index.html">
+                <img class="mobileMenuIcon" src="./img/home.png" alt="home" />
+            </a>
+        </button>
+        <button class="menu__list__item" onclick="toggleMobileMenu()">
+                <img class="mobileMenuIcon mobileMenu--open" src="./img/menu.png" alt="menu" />
+                <img class="mobileMenuIcon mobileMenu--close" src="./img/close.png" alt="menu" />
+        </button>
+    </section>
+    <ul class="menuMobile__dropdown d-md-none">
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Strona główna
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Pakowanie
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Artykuły biurowe
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                O nas
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Kontakt
+            </a>
+        </li>
+    </ul>
+
+
+    <!-- DESKTOP -->
+    <ul class="menu__list d-none d-md-flex">
         <li class="menu__list__item">
             <a href="./index.html">
                 Strona główna
@@ -145,7 +187,7 @@
     </button>
 </section>
 
-<main class="mainSection">
+<main class="mainSection" data-aos="fade-in">
     <section class="mainSection__item">
         <figure class="mainSection__item__imgWrapper">
             <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
@@ -156,78 +198,78 @@
         <p class="mainSection__item__desc">
             Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
         </p>
-        <a class="link mainSection__item__btn">
+        <a class="button link mainSection__item__btn">
             Szczegóły
         </a>
     </section>
 
     <section class="mainSection__item">
         <figure class="mainSection__item__imgWrapper">
-            <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
+            <img class="mainSection__item__img" src="./img/package.svg" alt="folia-stretch-brodnica" />
         </figure>
         <h3 class="mainSection__item__header">
-            Folia stretch
+            Worki i pakowanie
         </h3>
         <p class="mainSection__item__desc">
-            Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+            W ofercie materiałów do pakowania posiadamy worki i siatki do węgla, warzyw. Produkujemy worki polietylenowe z nadrukiem.
         </p>
-        <a class="link mainSection__item__btn">
+        <a class="button link mainSection__item__btn">
             Szczegóły
         </a>
     </section>
 
     <section class="mainSection__item">
         <figure class="mainSection__item__imgWrapper">
-            <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
+            <img class="mainSection__item__img" src="./img/supplies.svg" alt="artykuly-biurowe" />
         </figure>
         <h3 class="mainSection__item__header">
-            Folia stretch
+            Artykuły biurowe
         </h3>
         <p class="mainSection__item__desc">
-            Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+            Posiadamy szeroką gamę artykułow biurowych, od papieru, przez etykiety, oznaczenia, galanterię biurową, aż po elementy potrzebne do obsługi i prezentacji wizualnej konferencji.
         </p>
-        <a class="link mainSection__item__btn">
+        <a class="button link mainSection__item__btn">
             Szczegóły
         </a>
     </section>
 </main>
 
 <section class="aboutUs">
-    <h2 class="aboutUs__header">
+    <h2 class="aboutUs__header" data-aos="fade-up">
         Dlaczego <span class="aboutUs__header--red">benmar</span>?
     </h2>
-    <h3 class="aboutUs__subheader">
+    <h3 class="aboutUs__subheader" data-aos="fade-up">
         Wybierając nasze produkty wybierasz przede wszystkim <b>jakość i najwyższy poziom obsługi</b>.
     </h3>
 
     <section class="aboutUs__section">
-        <h4 class="aboutUs__section__header">
+        <h4 class="aboutUs__section__header" data-aos="fade-right">
             Stawiamy na jakość
         </h4>
-        <p class="aboutUs__section__text">
+        <p class="aboutUs__section__text"  data-aos="fade-right">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
         </p>
 
         <section class="aboutUs__section__icons">
-            <a class="link aboutUs__section__icons__item">
+            <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
                 <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                 <h5 class="aboutUs__section__icons__item__header">
                     Produkty najwyższej jakości
                 </h5>
             </a>
-            <a class="link aboutUs__section__icons__item">
+            <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
                 <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                 <h5 class="aboutUs__section__icons__item__header">
                     Produkty najwyższej jakości
                 </h5>
             </a>
-            <a class="link aboutUs__section__icons__item">
+            <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
                 <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                 <h5 class="aboutUs__section__icons__item__header">
                     Produkty najwyższej jakości
                 </h5>
             </a>
-            <a class="link aboutUs__section__icons__item">
+            <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
                 <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                 <h5 class="aboutUs__section__icons__item__header">
                     Produkty najwyższej jakości
@@ -237,22 +279,22 @@
     </section>
 
     <section class="aboutUs__section">
-        <h4 class="aboutUs__section__header">
+        <h4 class="aboutUs__section__header" data-aos="fade-right">
             Terminowość i sumienność
         </h4>
-        <p class="aboutUs__section__text">
+        <p class="aboutUs__section__text" data-aos="fade-right">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
         </p>
-        <section class="aboutUs__section__images">
+        <section class="aboutUs__section__images" data-aos="zoom-in-up">
         </section>
     </section>
 
     <section class="aboutUs__section aboutUs__section--offer">
-        <figure class="aboutUs__section__offer__imgWrapper">
+        <figure class="aboutUs__section__offer__imgWrapper" data-aos="fade-right">
             <img class="aboutUs__section__offer__img" src="./img/landing.png" alt="benmar" />
         </figure>
 
-        <main class="aboutUs__section__offer__content">
+        <main class="aboutUs__section__offer__content" data-aos="fade-left">
             <h2 class="aboutUs__section__offer__content__header">
                 Folia stretch od polskiego producenta
             </h2>
@@ -270,7 +312,7 @@
         </main>
     </section>
     <section class="aboutUs__section aboutUs__section--offer">
-        <main class="aboutUs__section__offer__content">
+        <main class="aboutUs__section__offer__content" data-aos="fade-right">
             <h2 class="aboutUs__section__offer__content__header">
                 Folia stretch od polskiego producenta
             </h2>
@@ -286,22 +328,22 @@
                 Szczegóły oferty
             </a>
         </main>
-        <figure class="aboutUs__section__offer__imgWrapper">
+        <figure class="aboutUs__section__offer__imgWrapper" data-aos="fade-left">
             <img class="aboutUs__section__offer__img" src="./img/landing.png" alt="benmar" />
         </figure>
     </section>
 </section>
 
 <section class="contact">
-    <h2 class="contact__header">
+    <h2 class="contact__header" data-aos="zoom-in-up">
         <span class="red">Skontaktuj się</span> z nami!
     </h2>
 
     <main class="contact__main">
-        <section class="contact__map">
+        <section class="contact__map" data-aos="fade-right">
 
         </section>
-        <section class="contact__data">
+        <section class="contact__data" data-aos="fade-left">
             <h3 class="contact__data__header">
                 Informacje o firmie
             </h3>
@@ -405,6 +447,7 @@
         </h6>
     </aside>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./siema.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./main.js"></script>

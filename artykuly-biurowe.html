@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banmar</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+</head>
+<body>
+<div class="container-fluid">
+<header class="header">
+    <section class="header__section">
+        <a class="link">
+            <img class="header__logo" src="./img/logo.png" alt="benmar" />
+        </a>
+
+        <h4 class="header__description d-none d-lg-block">
+            Producent siatki ogrodzeniowej i materiałów do pakowania <b>Golub-Dobrzyń, Rypin, Brodnica, Lipno</b>
+        </h4>
+    </section>
+    <section class="header__section d-none d-md-flex">
+        <section class="header__callToUs">
+            <h5 class="header__callToUs__header">
+                Zadzwoń do nas
+            </h5>
+
+            <a class="button header__callToUs__btn" href="tel:+48123123123">
+                123 123 123
+                <span class="header__callToUs__btn__imgWrapper">
+                    <img class="header__callToUs__btn__img" src="./img/phone.svg" alt="telefon" />
+                </span>
+            </a>
+        </section>
+
+        <form class="header__search d-none d-xxl-block">
+            <input class="header__input"
+                   placeholder="Wyszukiwanie..."
+            />
+            <button class="button header__searchSubmit">Szukaj</button>
+        </form>
+    </section>
+</header>
+<menu class="menu">
+    <section class="menuMobile d-flex d-md-none">
+        <button class="menu__list__item">
+            <a href="./index.html">
+                <img class="mobileMenuIcon" src="./img/home.png" alt="home" />
+            </a>
+        </button>
+        <button class="menu__list__item" onclick="toggleMobileMenu()">
+                <img class="mobileMenuIcon mobileMenu--open" src="./img/menu.png" alt="menu" />
+                <img class="mobileMenuIcon mobileMenu--close" src="./img/close.png" alt="menu" />
+        </button>
+    </section>
+    <ul class="menuMobile__dropdown d-md-none">
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Strona główna
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Pakowanie
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Artykuły biurowe
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                O nas
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Kontakt
+            </a>
+        </li>
+    </ul>
+
+
+    <!-- DESKTOP -->
+    <ul class="menu__list d-none d-md-flex">
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Strona główna
+            </a>
+        </li>
+        <li class="menu__list__item dropdownInvoke">
+            <a href="./index.html">
+                Pakowanie
+            </a>
+            <img class="whiteArrow" src="./img/white-arrow.svg" alt="wiecej" />
+            <ul class="dropdownMenu">
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item afterNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item afterNot beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Artykuły biurowe
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                O nas
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Kontakt
+            </a>
+        </li>
+    </ul>
+</menu>
+<main class="page">
+    <h1 class="page__header">
+        Artykuły biurowe
+    </h1>
+
+    <main class="page__grid">
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/papier.svg" alt="papier" />
+            <h3 class="page__grid__item__header">
+                Papier i galanteria papiernicza
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/binders.svg" alt="organizacja-i-archiwizacja-dokumentow" />
+            <h3 class="page__grid__item__header">
+                Organizacja i archiwizacja dokumentów
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/label.svg" alt="etykiety-i-oznaczenia" />
+            <h3 class="page__grid__item__header">
+                Etykiety i oznaczenia
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/galanteria-biurowa.svg" alt="galanteria-biurowa" />
+            <h3 class="page__grid__item__header">
+                Galanteria biurowa
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/prezentacja-wizualna-i-obsluga-konferencji.svg" alt="prezentacja-wizualna-i-obsluga-konferencji" />
+            <h3 class="page__grid__item__header">
+                Prezentacja wizualna i obsługa konferencji
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/cleaning.svg" alt="artykuly-higieniczne" />
+            <h3 class="page__grid__item__header">
+                Artykuły higieniczne i środki czystości
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/printer.svg" alt="drukarka" />
+            <h3 class="page__grid__item__header">
+                Urządzenia, maszyny biurowe, oprawa dokumentów
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+        <section class="page__grid__item">
+            <img class="page__grid__item__icon" src="./img/business-card.svg" alt="organizacja-i-planowanie-czasu-pracy" />
+            <h3 class="page__grid__item__header">
+                Organizacja i planowanie czasu pracy
+            </h3>
+            <a class="button link mainSection__item__btn">
+                Szczegóły
+            </a>
+        </section>
+    </main>
+</main>
+</div>
+<footer class="footer">
+    <div class="footer__main">
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Dane firmy
+            </h4>
+            <p class="footer__content">
+                Benmar Mariusz Szefler<br/>
+                Białkowo 39A<br/>
+                87-400 Golub-Dobrzyń<br/>
+                NIP: 878 155 56 64
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Kontakt
+            </h4>
+            <p class="footer__content">
+                Dział handlowy<br/>
+                tel. 785 182 282<br/>
+                biurobenmar@interia.pl<br/>
+                tel. 731 731 201<br/>
+                tel. 607 042 741
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Sprzedaż artykułów biurowych
+            </h4>
+            <p class="footer__content">
+                ul. H. Sienkiewicza 3<br/>
+                87-400 Golub-Dobrzyń<br/>
+                tel. 731 731 202
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Przydatne linki
+            </h4>
+            <ul class="footer__content">
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+            </ul>
+        </section>
+    </div>
+    <aside class="footer__bottom">
+        <h6 class="footer__bottom__header">
+            Projekt i wykonanie: <a class="link" href="https://skylo.pl" rel="noreferrer">skylo.pl</a>
+        </h6>
+    </aside>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./siema.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</body>
+</html>
