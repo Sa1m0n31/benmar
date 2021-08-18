@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banmar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="container-fluid">
+<header class="header">
+    <section class="header__section">
+        <a class="link">
+            <img class="header__logo" src="./img/logo.png" alt="benmar" />
+        </a>
+
+        <h4 class="header__description">
+            Producent siatki ogrodzeniowej i materiałów do pakowania <b>Golub-Dobrzyń, Rypin, Brodnica, Lipno</b>
+        </h4>
+    </section>
+    <section class="header__section">
+        <section class="header__callToUs">
+            <h5 class="header__callToUs__header">
+                Zadzwoń do nas
+            </h5>
+
+            <a class="button header__callToUs__btn" href="tel:+48123123123">
+                123 123 123
+                <span class="header__callToUs__btn__imgWrapper">
+                    <img class="header__callToUs__btn__img" src="./img/phone.svg" alt="telefon" />
+                </span>
+            </a>
+        </section>
+
+        <form class="header__search">
+            <input class="header__input"
+                   placeholder="Wyszukiwanie..."
+            />
+            <button class="button header__searchSubmit">Szukaj</button>
+        </form>
+    </section>
+</header>
+<menu class="menu">
+    <ul class="menu__list">
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Strona główna
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Pakowanie
+            </a>
+            <img class="whiteArrow" src="./img/white-arrow.svg" alt="wiecej" />
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Artykuły biurowe
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                O nas
+            </a>
+        </li>
+        <li class="menu__list__item">
+            <a href="./index.html">
+                Kontakt
+            </a>
+        </li>
+    </ul>
+</menu>
+<section class="carousel">
+    <button class="button carousel__btn carousel__btn--prev" onclick="prevSlide()">
+        <img class="carousel__btn__img" src="./img/right-arrow.png" alt="poprzedni" />
+    </button>
+    <header class="carousel__siema">
+        <section class="carousel__item">
+            <img class="carousel__img" src="./img/folia-stretch.png" alt="benmar-ogrodzenia" />
+        </section>
+        <section class="carousel__item">
+            <img class="carousel__img" src="./img/folia-stretch.png" alt="benmar-ogrodzenia" />
+        </section>
+        <section class="carousel__item">
+            <img class="carousel__img" src="./img/folia-stretch.png" alt="benmar-ogrodzenia" />
+        </section>
+    </header>
+    <button class="button carousel__btn carousel__btn--next" onclick="nextSlide()">
+        <img class="carousel__btn__img" src="./img/right-arrow.png" alt="nastepny" />
+    </button>
+</section>
+
+<main class="mainSection">
+    <section class="mainSection__item">
+        <figure class="mainSection__item__imgWrapper">
+            <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
+        </figure>
+        <h3 class="mainSection__item__header">
+            Folia stretch
+        </h3>
+        <p class="mainSection__item__desc">
+            Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+        </p>
+        <a class="link mainSection__item__btn">
+            Szczegóły
+        </a>
+    </section>
+
+    <section class="mainSection__item">
+        <figure class="mainSection__item__imgWrapper">
+            <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
+        </figure>
+        <h3 class="mainSection__item__header">
+            Folia stretch
+        </h3>
+        <p class="mainSection__item__desc">
+            Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+        </p>
+        <a class="link mainSection__item__btn">
+            Szczegóły
+        </a>
+    </section>
+
+    <section class="mainSection__item">
+        <figure class="mainSection__item__imgWrapper">
+            <img class="mainSection__item__img" src="./img/folia-stretch.svg" alt="folia-stretch-brodnica" />
+        </figure>
+        <h3 class="mainSection__item__header">
+            Folia stretch
+        </h3>
+        <p class="mainSection__item__desc">
+            Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+        </p>
+        <a class="link mainSection__item__btn">
+            Szczegóły
+        </a>
+    </section>
+</main>
+
+<section class="aboutUs">
+    <h2 class="aboutUs__header">
+        Dlaczego <span class="aboutUs__header--red">benmar</span>?
+    </h2>
+    <h3 class="aboutUs__subheader">
+        Wybierając nasze produkty wybierasz przede wszystkim <b>jakość i najwyższy poziom obsługi</b>.
+    </h3>
+
+    <section class="aboutUs__section">
+        <h4 class="aboutUs__section__header">
+            Stawiamy na jakość
+        </h4>
+        <p class="aboutUs__section__text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        </p>
+
+        <section class="aboutUs__section__icons">
+            <a class="link aboutUs__section__icons__item">
+                <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <h5 class="aboutUs__section__icons__item__header">
+                    Produkty najwyższej jakości
+                </h5>
+            </a>
+            <a class="link aboutUs__section__icons__item">
+                <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <h5 class="aboutUs__section__icons__item__header">
+                    Produkty najwyższej jakości
+                </h5>
+            </a>
+            <a class="link aboutUs__section__icons__item">
+                <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <h5 class="aboutUs__section__icons__item__header">
+                    Produkty najwyższej jakości
+                </h5>
+            </a>
+            <a class="link aboutUs__section__icons__item">
+                <img class="aboutUs__section__icons__item__img" src="./img/box.svg" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <h5 class="aboutUs__section__icons__item__header">
+                    Produkty najwyższej jakości
+                </h5>
+            </a>
+        </section>
+    </section>
+
+    <section class="aboutUs__section">
+        <h4 class="aboutUs__section__header">
+            Terminowość i sumienność
+        </h4>
+        <p class="aboutUs__section__text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        </p>
+        <section class="aboutUs__section__images">
+        </section>
+    </section>
+
+    <section class="aboutUs__section aboutUs__section--offer">
+        <figure class="aboutUs__section__offer__imgWrapper">
+            <img class="aboutUs__section__offer__img" src="./img/landing.png" alt="benmar" />
+        </figure>
+
+        <main class="aboutUs__section__offer__content">
+            <h2 class="aboutUs__section__offer__content__header">
+                Folia stretch od polskiego producenta
+            </h2>
+            <article class="aboutUs__section__offer__content__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <p>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                </p>
+            </article>
+            <a class="button aboutUs__section__offer__content__btn">
+                Szczegóły oferty
+            </a>
+        </main>
+    </section>
+    <section class="aboutUs__section aboutUs__section--offer">
+        <main class="aboutUs__section__offer__content">
+            <h2 class="aboutUs__section__offer__content__header">
+                Folia stretch od polskiego producenta
+            </h2>
+            <article class="aboutUs__section__offer__content__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </p>
+                <p>
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                </p>
+            </article>
+            <a class="button aboutUs__section__offer__content__btn">
+                Szczegóły oferty
+            </a>
+        </main>
+        <figure class="aboutUs__section__offer__imgWrapper">
+            <img class="aboutUs__section__offer__img" src="./img/landing.png" alt="benmar" />
+        </figure>
+    </section>
+</section>
+
+<section class="contact">
+    <h2 class="contact__header">
+        <span class="red">Skontaktuj się</span> z nami!
+    </h2>
+</section>
+</div>
+<script src="./siema.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</body>
+</html>
