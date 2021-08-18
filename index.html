@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
 </head>
 <body>
 <div class="container-fluid">
@@ -16,7 +17,7 @@
             <img class="header__logo" src="./img/logo.png" alt="benmar" />
         </a>
 
-        <h4 class="header__description">
+        <h4 class="header__description d-none d-lg-block">
             Producent siatki ogrodzeniowej i materiałów do pakowania <b>Golub-Dobrzyń, Rypin, Brodnica, Lipno</b>
         </h4>
     </section>
@@ -34,7 +35,7 @@
             </a>
         </section>
 
-        <form class="header__search">
+        <form class="header__search d-none d-xxl-block">
             <input class="header__input"
                    placeholder="Wyszukiwanie..."
             />
@@ -49,11 +50,63 @@
                 Strona główna
             </a>
         </li>
-        <li class="menu__list__item">
+        <li class="menu__list__item dropdownInvoke">
             <a href="./index.html">
                 Pakowanie
             </a>
             <img class="whiteArrow" src="./img/white-arrow.svg" alt="wiecej" />
+            <ul class="dropdownMenu">
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item afterNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+                <li class="dropdownMenu__item afterNot beforeNot">
+                    <a href="#">
+                        Folia stretch maszynowa
+                    </a>
+                </li>
+            </ul>
         </li>
         <li class="menu__list__item">
             <a href="./index.html">
@@ -243,8 +296,115 @@
     <h2 class="contact__header">
         <span class="red">Skontaktuj się</span> z nami!
     </h2>
+
+    <main class="contact__main">
+        <section class="contact__map">
+
+        </section>
+        <section class="contact__data">
+            <h3 class="contact__data__header">
+                Informacje o firmie
+            </h3>
+            <address class="contact__data__address">
+                Benmar Mariusz Szefler<br/>
+                Białkowo 39A<br/>
+                87-400 Golub-Dobrzyń<br/>
+                NIP: 878 155 56 64<br/>
+            </address>
+
+            <h3 class="contact__data__header">
+                Dane kontaktowe
+            </h3>
+            <section class="contact__data__address">
+                <h3 class="contact__data__contact">
+                    <img class="contact__data__contact__img" src="./img/phone-1.svg" alt="telefon" />
+                    <a class="link" href="tel:+48600179174">
+                        600 179 174
+                    </a>
+                </h3>
+                <h3 class="contact__data__contact">
+                    <img class="contact__data__contact__img" src="./img/mail.svg" alt="email" />
+                    <a class="link" href="mailto:szymon.burak0031@gmail.com">
+                        szymon.burak0031@gmail.com
+                    </a>
+                </h3>
+            </section>
+
+            <h3 class="contact__data__header">
+                Sprzedaż artykułów biurowych w punkcie
+            </h3>
+            <address class="contact__data__address">
+                Sklep<br/>
+                ul. H. Sienkiewicza 3<br/>
+                87-400 Golub-Dobrzyń<br/>
+                tel. 731 731 202<br/>
+            </address>
+
+            <section class="contact__data__buttons">
+                <a class="button button--contact">
+                    Zadzwoń
+                </a>
+                <a class="button button--contact">
+                    Napisz
+                </a>
+            </section>
+        </section>
+    </main>
 </section>
 </div>
+<footer class="footer">
+    <div class="footer__main">
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Dane firmy
+            </h4>
+            <p class="footer__content">
+                Benmar Mariusz Szefler<br/>
+                Białkowo 39A<br/>
+                87-400 Golub-Dobrzyń<br/>
+                NIP: 878 155 56 64
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Kontakt
+            </h4>
+            <p class="footer__content">
+                Dział handlowy<br/>
+                tel. 785 182 282<br/>
+                biurobenmar@interia.pl<br/>
+                tel. 731 731 201<br/>
+                tel. 607 042 741
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Sprzedaż artykułów biurowych
+            </h4>
+            <p class="footer__content">
+                ul. H. Sienkiewicza 3<br/>
+                87-400 Golub-Dobrzyń<br/>
+                tel. 731 731 202
+            </p>
+        </section>
+        <section class="footer__col">
+            <h4 class="footer__header">
+                Przydatne linki
+            </h4>
+            <ul class="footer__content">
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a>Artykuły biurowe Brodnica</a></li>
+            </ul>
+        </section>
+    </div>
+    <aside class="footer__bottom">
+        <h6 class="footer__bottom__header">
+            Projekt i wykonanie: <a class="link" href="https://skylo.pl" rel="noreferrer">skylo.pl</a>
+        </h6>
+    </aside>
+</footer>
 <script src="./siema.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./main.js"></script>

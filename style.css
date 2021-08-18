@@ -67,6 +67,7 @@ figure {
 .header__description {
     font-size: 15px;
     font-weight: 400;
+    margin-left: 30px;
 }
 
 .header__description b {
@@ -86,6 +87,7 @@ figure {
 .header__callToUs__header {
     font-weight: 400;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .header__callToUs__btn {
@@ -159,6 +161,74 @@ figure {
 
 .whiteArrow {
     margin-left: 20px;
+    transform: rotate(180deg);
+}
+
+.dropdownInvoke {
+    color: #fff;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownMenu {
+    display: none;
+    background: rgba(19, 19, 19, .85);
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 800px;
+    height: 200px;
+    border-bottom: 5px solid var(--primary);
+    z-index: 3;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.dropdownInvoke:hover .dropdownMenu, .dropdownMenu:hover {
+    display: flex;
+}
+
+.dropdownMenu__item {
+    width: 17%;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.dropdownMenu__item a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+
+.dropdownMenu__item::after {
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: var(--greyLight);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.afterNot::after, .beforeNot::before {
+    display: none;
+}
+
+.dropdownMenu__item::before {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: var(--greyLight);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*transform: translateX(-50%);*/
 }
 
 /* Hero carousel */
@@ -313,6 +383,7 @@ figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 
@@ -322,6 +393,7 @@ figure {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 22%;
 }
 
 .aboutUs__section__icons__item:not(:last-child)::after {
@@ -340,6 +412,7 @@ figure {
 }
 
 .aboutUs__section__icons__item__img {
+    width: 50%;
     transition: .4s all;
 }
 
@@ -371,7 +444,7 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    min-height: 400px;
     overflow: hidden;
     padding: var(--extraPadding);
 }
@@ -392,6 +465,7 @@ figure {
     background: var(--black);
     width: 43%;
     height: 100%;
+    min-height: 400px;
     margin: 0;
     padding: 30px;
     border-bottom: 25px solid var(--primary);
@@ -432,13 +506,224 @@ figure {
 .contact {
     padding: var(--extraPadding);
     border-top: 1px solid var(--greyLight);
+    height: auto;
 }
 
 .contact__header {
     text-align: center;
     font-size: 27px;
+    font-weight: 700;
 }
 
 .red {
     color: var(--primary);
+}
+
+.contact__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 50px;
+}
+
+.contact__map {
+    width: 60%;
+    height: 100%;
+    background: url("./img/example.png");
+    background-size: cover;
+}
+
+.contact__data {
+    width: 35%;
+}
+
+.contact__data__header {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact__data__address {
+    margin-bottom: 40px;
+}
+
+.contact__data__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button--contact:first-of-type {
+    margin-right: 15px;
+}
+
+.button--contact {
+    background: var(--primary);
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--contact:hover {
+    color: #fff;
+}
+
+.contact__data__contact {
+    font-size: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__data__contact__img {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.contact__data__contact a {
+    display: block;
+    transition: .4s all;
+}
+
+.contact__data__contact a:hover {
+    transform: translateX(10px);
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    background: var(--black);
+    width: 100%;
+    border-top: 5px solid var(--primary);
+    padding: var(--padding);
+    padding-top: 40px;
+}
+
+.footer__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer * {
+    color: #fff;
+}
+
+.footer__col {
+    width: 20%;
+}
+
+.footer__header {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--greyLight);
+}
+
+.footer__content {
+    font-size: 15px;
+}
+
+.footer__bottom {
+    margin-top: 30px;
+    border-top: 1px solid var(--greyLight);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer__bottom__header {
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer__bottom__header a:hover {
+    color: #fff;
+}
+
+/* Page */
+.page {
+    margin: 50px 0;
+}
+
+.page__header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.page__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page__mainImg {
+    width: 38%;
+    height: auto;
+}
+
+.page__desc {
+    padding: 20px;
+    width: 60%;
+    background: var(--black);
+    border-bottom: 10px solid var(--primary);
+}
+
+.page__desc * {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.aboutProduct {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid var(--greyLight);
+}
+
+.page__section__section__header {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.page__section__section:first-of-type {
+    width: 40%;
+}
+
+.page__section__section:last-of-type {
+    width: 58%;
+}
+
+.product__info {
+    max-width: 500px;
+}
+
+.product__info__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+
+.product__info__item__value {
+    font-weight: 700;
+}
+
+.product__info__item:nth-of-type(odd) {
+    background: var(--greyDark);
+}
+
+.product__info__item:nth-of-type(even) {
+    background: var(--whiteDark);
 }
