@@ -47,12 +47,16 @@
                 </a>
             </section>
 
-            <form class="header__search">
-                <input class="header__input"
-                       placeholder="Wyszukiwanie..."
-                />
-                <button class="button header__searchSubmit">Szukaj</button>
-            </form>
+            <?php
+                get_search_form();
+            ?>
+
+<!--            <form class="header__search">-->
+<!--                <input class="header__input"-->
+<!--                       placeholder="Wyszukiwanie..."-->
+<!--                />-->
+<!--                <button class="button header__searchSubmit">Szukaj</button>-->
+<!--            </form>-->
         </section>
     </header>
     <menu class="menu">

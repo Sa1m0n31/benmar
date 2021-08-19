@@ -7,15 +7,26 @@ get_header();
             <img class="carousel__btn__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/right-arrow.png'; ?>" alt="poprzedni" />
         </button>
         <header class="carousel__siema">
-            <section class="carousel__item">
-                <img class="carousel__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/folia-stretch.png'; ?>" alt="benmar-ogrodzenia" />
-            </section>
-            <section class="carousel__item">
-                <img class="carousel__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/folia-stretch.png'; ?>" alt="benmar-ogrodzenia" />
-            </section>
-            <section class="carousel__item">
-                <img class="carousel__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/folia-stretch.png'; ?>" alt="benmar-ogrodzenia" />
-            </section>
+            <?php
+                $args = array(
+                        'post_type' => 'baner'
+                );
+
+                $query = new WP_Query($args);
+
+                if($query->have_posts()) {
+                    while($query->have_posts()) {
+                        $query->the_post();
+                        ?>
+
+                        <section class="carousel__item">
+                            <img class="carousel__img" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+                        </section>
+
+                            <?php
+                    }
+                }
+            ?>
         </header>
         <button class="button carousel__btn carousel__btn--next" onclick="nextSlide()">
             <img class="carousel__btn__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/right-arrow.png'; ?>" alt="nastepny" />
@@ -25,45 +36,45 @@ get_header();
     <main class="mainSection" data-aos="fade-in">
         <section class="mainSection__item">
             <figure class="mainSection__item__imgWrapper">
-                <img class="mainSection__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/folia-stretch.svg'; ?>" alt="folia-stretch-brodnica" />
+                <img class="mainSection__item__img" src="<?php echo get_field('czarne_tlo_-_ikonka_1', 18); ?>" alt="folia-stretch-brodnica" />
             </figure>
             <h3 class="mainSection__item__header">
-                Folia stretch
+                <?php echo get_field('czarne_tlo_-_tytul_1', 18); ?>
             </h3>
             <p class="mainSection__item__desc">
-                Produkujemy folię stretch maszynową i ręczną. Folia stretch dostępna jest na rolkach tradycyjnych oraz powiększonych Jumbo.
+                <?php echo get_field('czarne_tlo_-_tekst_1', 18); ?>
             </p>
-            <a class="button link mainSection__item__btn">
+            <a class="button link mainSection__item__btn" href="<?php echo get_field('czarne_tlo_-_link_1', 18); ?>">
                 Szczegóły
             </a>
         </section>
 
         <section class="mainSection__item">
             <figure class="mainSection__item__imgWrapper">
-                <img class="mainSection__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/package.svg'; ?>" alt="folia-stretch-brodnica" />
+                <img class="mainSection__item__img" src="<?php echo get_field('czarne_tlo_-_ikonka_2', 18); ?>" alt="folia-stretch-brodnica" />
             </figure>
             <h3 class="mainSection__item__header">
-                Worki i pakowanie
+                <?php echo get_field('czarne_tlo_-_tytul_2', 18); ?>
             </h3>
             <p class="mainSection__item__desc">
-                W ofercie materiałów do pakowania posiadamy worki i siatki do węgla, warzyw. Produkujemy worki polietylenowe z nadrukiem.
+                <?php echo get_field('czarne_tlo_-_tekst_2', 18); ?>
             </p>
-            <a class="button link mainSection__item__btn">
+            <a class="button link mainSection__item__btn" href="<?php echo get_field('czarne_tlo_-_link_2', 18); ?>">
                 Szczegóły
             </a>
         </section>
 
         <section class="mainSection__item">
             <figure class="mainSection__item__imgWrapper">
-                <img class="mainSection__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/supplies.svg'; ?>" alt="artykuly-biurowe" />
+                <img class="mainSection__item__img" src="<?php echo get_field('czarne_tlo_-_ikonka_2', 18); ?>" alt="artykuly-biurowe" />
             </figure>
             <h3 class="mainSection__item__header">
-                Artykuły biurowe
+                <?php echo get_field('czarne_tlo_-_tytul_3', 18); ?>
             </h3>
             <p class="mainSection__item__desc">
-                Posiadamy szeroką gamę artykułow biurowych, od papieru, przez etykiety, oznaczenia, galanterię biurową, aż po elementy potrzebne do obsługi i prezentacji wizualnej konferencji.
+                <?php echo get_field('czarne_tlo_-_tekst_3', 18); ?>
             </p>
-            <a class="button link mainSection__item__btn">
+            <a class="button link mainSection__item__btn" href="<?php echo get_field('czarne_tlo_-_link_3', 18); ?>">
                 Szczegóły
             </a>
         </section>
@@ -79,35 +90,35 @@ get_header();
 
         <section class="aboutUs__section">
             <h4 class="aboutUs__section__header" data-aos="fade-right">
-                Stawiamy na jakość
+                <?php echo get_field('naglowek_1', 18); ?>
             </h4>
             <p class="aboutUs__section__text"  data-aos="fade-right">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                <?php echo get_field('tekst_1', 18); ?>
             </p>
 
             <section class="aboutUs__section__icons">
-                <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
-                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/box.svg'; ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <a class="link aboutUs__section__icons__item" data-aos="zoom-in" href="<?php echo get_field('link_do_ikonki_1', 18); ?>">
+                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_field('ikonka_1', 18); ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                     <h5 class="aboutUs__section__icons__item__header">
-                        Produkty najwyższej jakości
+                        <?php echo get_field('tekst_do_ikonki_1', 18); ?>
                     </h5>
                 </a>
-                <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
-                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/box.svg'; ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <a class="link aboutUs__section__icons__item" data-aos="zoom-in" href="<?php echo get_field('link_do_ikonki_1', 18); ?>">
+                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_field('ikonka_2', 18); ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                     <h5 class="aboutUs__section__icons__item__header">
-                        Produkty najwyższej jakości
+                        <?php echo get_field('tekst_do_ikonki_2', 18); ?>
                     </h5>
                 </a>
-                <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
-                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/box.svg'; ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <a class="link aboutUs__section__icons__item" data-aos="zoom-in" href="<?php echo get_field('link_do_ikonki_1', 18); ?>">
+                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_field('ikonka_3', 18); ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                     <h5 class="aboutUs__section__icons__item__header">
-                        Produkty najwyższej jakości
+                        <?php echo get_field('tekst_do_ikonki_3', 18); ?>
                     </h5>
                 </a>
-                <a class="link aboutUs__section__icons__item" data-aos="zoom-in">
-                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/box.svg'; ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
+                <a class="link aboutUs__section__icons__item" data-aos="zoom-in" href="<?php echo get_field('link_do_ikonki_1', 18); ?>">
+                    <img class="aboutUs__section__icons__item__img" src="<?php echo get_field('ikonka_4', 18); ?>" alt="siatka-ogrodzeniowa-golub-dobrzyn" />
                     <h5 class="aboutUs__section__icons__item__header">
-                        Produkty najwyższej jakości
+                        <?php echo get_field('tekst_do_ikonki_4', 18); ?>
                     </h5>
                 </a>
             </section>
@@ -115,10 +126,10 @@ get_header();
 
         <section class="aboutUs__section">
             <h4 class="aboutUs__section__header" data-aos="fade-right">
-                Terminowość i sumienność
+                <?php echo get_field('naglowek_2', 18); ?>
             </h4>
             <p class="aboutUs__section__text" data-aos="fade-right">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                <?php echo get_field('tekst_2', 18); ?>
             </p>
             <section class="aboutUs__section__images" data-aos="zoom-in-up">
             </section>
@@ -176,7 +187,7 @@ get_header();
 
         <main class="contact__main">
             <section class="contact__map" data-aos="fade-right">
-
+                <?php echo do_shortcode('[wpgmza id="1"]'); ?>
             </section>
             <section class="contact__data" data-aos="fade-left">
                 <h3 class="contact__data__header">

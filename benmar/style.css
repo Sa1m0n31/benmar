@@ -55,7 +55,7 @@ figure {
 }
 
 button, a {
-    transition: .4s all;
+    transition: .2s all;
 }
 
 .button {
@@ -132,12 +132,13 @@ button, a {
     padding: 5px 20px 5px 5px;
     position: relative;
     margin-left: 40px;
+    opacity: .9;
 }
 
 .header__callToUs__btn:hover {
     color: #fff;
+    opacity: 1;
     background: var(--black);
-    padding-left: 15px;
 }
 
 .header__callToUs__btn__imgWrapper {
@@ -152,10 +153,11 @@ button, a {
     right: 0;
 }
 
-.header__input {
+.search-field {
     font-size: 14px;
     padding: 2px 5px;
     background: var(--whiteDark);
+    outline: none !important;
     border: 1px solid #000;
 }
 
@@ -163,13 +165,17 @@ button, a {
     display: none;
 }
 
-.header__searchSubmit {
+.search-submit {
     background: var(--primary);
     color: #fff;
     font-size: 14px;
     border: 1px solid var(--black);
     padding: 2px 15px;
     text-transform: uppercase;
+}
+
+.search-form label {
+    margin-bottom: 0 !important;
 }
 
 /* Menu */
@@ -308,7 +314,7 @@ button, a {
     z-index: 2;
     border: none !important;
     outline: none !important;
-    transition: .4s all;
+    transition: .2s all;
 }
 
 .carousel__btn__img {
@@ -459,6 +465,8 @@ button, a {
     align-items: center;
     position: relative;
     width: 22%;
+    opacity: .9 !important;
+    transition: .3s all ease-in-out;
 }
 
 .aboutUs__section__icons__item:not(:last-child)::after {
@@ -472,13 +480,17 @@ button, a {
     background: var(--greyLight);
 }
 
-.aboutUs__section__icons__item:hover .aboutUs__section__icons__item__img {
-    transform: translateY(-10px);
+/*.aboutUs__section__icons__item:hover .aboutUs__section__icons__item__img {*/
+/*    transform: translateY(-10px);*/
+/*}*/
+
+.aboutUs__section__icons__item:hover {
+    opacity: 1 !important;
 }
 
 .aboutUs__section__icons__item__img {
-    width: 50%;
-    transition: .4s all;
+    width: 40%;
+    transition: .2s all;
 }
 
 .aboutUs__section__icons__item__header {
@@ -654,12 +666,11 @@ button, a {
 
 .contact__data__contact a {
     display: block;
-    transition: .4s all;
+    transition: .2s all;
 }
 
 .contact__data__contact a:hover {
-    transform: translateX(10px);
-    color: #000;
+    color: var(--primary);
 }
 
 /* Footer */
@@ -846,4 +857,25 @@ button, a {
     .carousel__siema, .carousel__item, .carousel__img {
         zoom: 1;
     }
+}
+
+/* Search page */
+.searchPage {
+    min-height: 70vh;
+}
+
+.entry-title a {
+    display: block;
+    color: #000;
+    text-decoration: none !important;
+    transition: .2s all;
+}
+
+.entry-title a:hover {
+    transform: translateX(10px);
+}
+
+/* Map */
+#wpgmza_map {
+    height: 500px !important;
 }

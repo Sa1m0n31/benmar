@@ -51,6 +51,10 @@
 }
 
 @media(max-width: 996px) {
+    .contact__map {
+        margin-bottom: 30px;
+    }
+
     .header__section:first-of-type {
         padding-right: 20vw;
     }

@@ -9,7 +9,7 @@ get_header();
 
         <main class="contact__main">
             <section class="contact__map" data-aos="fade-right">
-
+                <?php echo do_shortcode('[wpgmza id="1"]'); ?>
             </section>
             <section class="contact__data" data-aos="fade-left">
                 <h3 class="contact__data__header">
