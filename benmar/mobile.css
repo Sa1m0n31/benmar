@@ -24,6 +24,18 @@
     .aboutUs__section__icons__item:not(:last-child)::after {
         display: none;
     }
+
+    .carousel__item__header, .carousel__item__subheader {
+        font-size: 54px;
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .carousel__item__content {
+        right: 15%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -51,6 +63,10 @@
 }
 
 @media(max-width: 996px) {
+    .carousel__item__header, .carousel__item__subheader {
+        font-size: 38px;
+    }
+
     .contact__map {
         margin-bottom: 30px;
     }
@@ -143,6 +159,23 @@
     .page__grid__item .button {
         font-size: 13px;
     }
+
+    .page__content {
+        flex-direction: column;
+    }
+
+    .page__content > * {
+        width: 100% !important;
+    }
+
+    .page__offer__img {
+        margin-bottom: 20px;
+    }
+
+    .page__content__text ul {
+        font-size: 15px !important;
+        margin-left: 20px !important;
+    }
 }
 
 @media(max-width: 768px) {
@@ -222,7 +255,7 @@
     }
 
     .carousel__img {
-        max-height: 300px;
+        max-height: 400px;
     }
 
     .carousel__btn {
@@ -252,10 +285,14 @@
     }
 
     .carousel__img {
-        max-height: 200px;
+        max-height: 300px;
     }
 
     .page__grid__item {
         width: 100%;
+    }
+
+    .carousel__item__content {
+        display: none;
     }
 }

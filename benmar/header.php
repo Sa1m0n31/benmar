@@ -39,8 +39,8 @@
                     Zadzwoń do nas
                 </h5>
 
-                <a class="button header__callToUs__btn" href="tel:+48123123123">
-                    123 123 123
+                <a class="button header__callToUs__btn" href="tel:+48785182282">
+                    785 182 282
                     <span class="header__callToUs__btn__imgWrapper">
                     <img class="header__callToUs__btn__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/phone.svg'; ?>" alt="telefon" />
                 </span>
@@ -50,13 +50,6 @@
             <?php
                 get_search_form();
             ?>
-
-<!--            <form class="header__search">-->
-<!--                <input class="header__input"-->
-<!--                       placeholder="Wyszukiwanie..."-->
-<!--                />-->
-<!--                <button class="button header__searchSubmit">Szukaj</button>-->
-<!--            </form>-->
         </section>
     </header>
     <menu class="menu">
@@ -78,12 +71,7 @@
                 </a>
             </li>
             <li class="menu__list__item">
-                <a href="./index.html">
-                    Pakowanie
-                </a>
-            </li>
-            <li class="menu__list__item">
-                <a href="./index.html">
+                <a href="<?php echo get_page_link(get_page_by_title('Artykuły biurowe')->ID); ?>">
                     Artykuły biurowe
                 </a>
             </li>
@@ -93,7 +81,7 @@
                 </a>
             </li>
             <li class="menu__list__item">
-                <a href="./index.html">
+                <a href="<?php echo get_page_link(get_page_by_title('Kontakt')->ID); ?>">
                     Kontakt
                 </a>
             </li>
@@ -108,59 +96,59 @@
                 </a>
             </li>
             <li class="menu__list__item dropdownInvoke">
-                <a href="./index.html">
+                <a href="#">
                     Pakowanie
                 </a>
                 <img class="whiteArrow" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/white-arrow.svg'; ?>" alt="wiecej" />
                 <ul class="dropdownMenu">
                     <li class="dropdownMenu__item">
-                        <a href="#">
+                        <a href="<?php echo get_page_link(get_page_by_title('Folia spożywcza')->ID); ?>">
+                            Folia spożywcza
+                        </a>
+                    </li>
+                    <li class="dropdownMenu__item">
+                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch maszynowa')->ID); ?>">
                             Folia stretch maszynowa
                         </a>
                     </li>
                     <li class="dropdownMenu__item">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch jumbo')->ID); ?>">
+                            Folia stretch jumbo
                         </a>
                     </li>
                     <li class="dropdownMenu__item">
-                        <a href="#">
-                            Folia stretch maszynowa
-                        </a>
-                    </li>
-                    <li class="dropdownMenu__item">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch ręczna')->ID); ?>">
+                            Folia stretch ręczna
                         </a>
                     </li>
                     <li class="dropdownMenu__item afterNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Taśmy PP')->ID); ?>">
+                            Taśmy PP
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Siatka do owijania palet')->ID); ?>">
+                           Siatka do owijania palet
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Siatka rolnicza')->ID); ?>">
+                            Siatka rolnicza
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania na roli')->ID); ?>">
+                            Worki do pakowania na roli
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                        <a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania węgla')->ID); ?>">
+                            Worki do pakowania węgla
                         </a>
                     </li>
-                    <li class="dropdownMenu__item afterNot beforeNot">
-                        <a href="#">
-                            Folia stretch maszynowa
+                    <li class="dropdownMenu__item beforeNot afterNot">
+                        <a href="<?php echo get_page_link(get_page_by_title('Kaptury foliowe')->ID); ?>">
+                            Kaptury foliowe
                         </a>
                     </li>
                 </ul>

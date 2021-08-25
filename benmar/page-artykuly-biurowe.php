@@ -13,7 +13,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Papier i galanteria papiernicza
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/papier-i-galanteria-papiernicza/">
                     Szczegóły
                 </a>
             </section>
@@ -22,7 +22,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Organizacja i archiwizacja dokumentów
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/organizacja-i-archiwizacja-dokumentow">
                     Szczegóły
                 </a>
             </section>
@@ -31,7 +31,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Etykiety i oznaczenia
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/etykiety-i-oznaczenia">
                     Szczegóły
                 </a>
             </section>
@@ -40,7 +40,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Galanteria biurowa
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/galanteria-biurowa">
                     Szczegóły
                 </a>
             </section>
@@ -50,7 +50,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Prezentacja wizualna i obsługa konferencji
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/prezentacja-wizualna-i-obsluga-konferencji">
                     Szczegóły
                 </a>
             </section>
@@ -59,7 +59,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Artykuły higieniczne i środki czystości
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/artykuly-higieniczne-i-srodki-czystosci">
                     Szczegóły
                 </a>
             </section>
@@ -68,7 +68,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Urządzenia, maszyny biurowe, oprawa dokumentów
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/urzadzenia-maszyny-biurowe-oprawa-dokumentow/">
                     Szczegóły
                 </a>
             </section>
@@ -77,7 +77,7 @@ get_header();
                 <h3 class="page__grid__item__header">
                     Organizacja i planowanie czasu pracy
                 </h3>
-                <a class="button link mainSection__item__btn">
+                <a class="button link mainSection__item__btn" href="http://benmar.skylo-test3.pl/artykuly-do-biura/organizacja-i-planowanie-czasu-pracy">
                     Szczegóły
                 </a>
             </section>

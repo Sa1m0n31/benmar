@@ -61,7 +61,7 @@
     </div>
     <aside class="footer__bottom">
         <h6 class="footer__bottom__header">
-            Projekt i wykonanie: <a class="link" href="https://skylo.pl" rel="noreferrer">skylo.pl</a>
+            Projekt i wykonanie: <a class="link" href="https://skylo.pl" rel="noreferrer"><b>skylo.pl</b></a>
         </h6>
     </aside>
 </footer>

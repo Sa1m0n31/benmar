@@ -21,6 +21,15 @@ get_header();
 
                         <section class="carousel__item">
                             <img class="carousel__img" src="<?php echo get_field('zdjecie'); ?>" alt="<?php echo the_title(); ?>" />
+
+                            <main class="carousel__item__content">
+                                <h1 class="carousel__item__header">
+                                    Z nami osiągniesz
+                                </h1>
+                                <h2 class="carousel__item__subheader">
+                                    Więcej
+                                </h2>
+                            </main>
                         </section>
 
                             <?php
@@ -206,14 +215,14 @@ get_header();
                 <section class="contact__data__address">
                     <h3 class="contact__data__contact">
                         <img class="contact__data__contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/phone-1.svg'; ?>" alt="telefon" />
-                        <a class="link" href="tel:+48600179174">
-                            600 179 174
+                        <a class="link" href="tel:+48785182282">
+                            785 182 282
                         </a>
                     </h3>
                     <h3 class="contact__data__contact">
                         <img class="contact__data__contact__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/mail.svg'; ?>" alt="email" />
-                        <a class="link" href="mailto:szymon.burak0031@gmail.com">
-                            szymon.burak0031@gmail.com
+                        <a class="link" href="mailto:biurobenmar@interia.pl">
+                            biurobenmar@interia.pl
                         </a>
                     </h3>
                 </section>
@@ -229,10 +238,10 @@ get_header();
                 </address>
 
                 <section class="contact__data__buttons">
-                    <a class="button button--contact">
+                    <a class="button button--contact" href="tel:+48785182282">
                         Zadzwoń
                     </a>
-                    <a class="button button--contact">
+                    <a class="button button--contact" href="mailto:biurobenmar@interia.pl">
                         Napisz
                     </a>
                 </section>

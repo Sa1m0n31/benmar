@@ -210,3 +210,28 @@ function benmar_add_baner_post_type() {
 
 add_action("init", "benmar_add_baner_post_type");
 
+/* Add OFFER post type */
+function benmar_add_offer_post_type() {
+    $supports = array(
+        'title', 'editor'
+    );
+
+    $labels = array(
+        'name' => 'Artykuły biurowe'
+    );
+
+    $args = array(
+        'labels'               => $labels,
+        'supports'             => $supports,
+        'public'               => true,
+        'capability_type'      => 'post',
+        'has_archive'          => true,
+        'menu_position'        => 30,
+        'rewrite'     => array( 'slug' => 'artykuly-do-biura' ),
+        'menu_icon'            => 'dashicons-edit'
+    );
+
+    register_post_type("offer", $args);
+}
+
+add_action("init", "benmar_add_offer_post_type");
