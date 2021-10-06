@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91755d06-aa2e-4c4c-89aa-8d096a4e2cdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/benmar/single-artykuly-biurowe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/benmar/single-offer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benmar/img/rekawy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benmar/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benmar/img/teamwork.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/img/teamwork.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benmar/page-artykuly-biurowe.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/page-artykuly-biurowe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benmar/page-kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/page-kontakt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benmar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/benmar/style.css" afterDir="false" />
     </list>
@@ -55,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/benmar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/benmar/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -63,8 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar\benmar" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar\benmar\img" />
+      <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar\benmar" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar\benmar\js" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar" />
       <recent name="C:\Users\sajmo\Desktop\Programowanie\Projekty\benmar\img" />
@@ -83,7 +78,9 @@
       <workItem from="1629367186010" duration="93000" />
       <workItem from="1629369018535" duration="10000" />
       <workItem from="1629399451952" duration="4550000" />
-      <workItem from="1629921659898" duration="7561000" />
+      <workItem from="1629921659898" duration="8195000" />
+      <workItem from="1629990403888" duration="21000" />
+      <workItem from="1633510600799" duration="4478000" />
     </task>
     <servers />
   </component>

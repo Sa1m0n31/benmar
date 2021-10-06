@@ -67,6 +67,10 @@
         font-size: 38px;
     }
 
+    .aboutUs__section--offer, .aboutUs__section__offer__content {
+        height: auto;
+    }
+
     .contact__map {
         margin-bottom: 30px;
     }

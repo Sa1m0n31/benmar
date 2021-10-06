@@ -155,13 +155,13 @@ get_header();
                 </h2>
                 <article class="aboutUs__section__offer__content__text">
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        Oferujemy wysokiej jakości folię stretch, maszynową, jumbo oraz ręczną.
                     </p>
                     <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                        Dołącz do szerokiego grona Klientów zadowolonych z naszych usług.
                     </p>
                 </article>
-                <a class="button aboutUs__section__offer__content__btn">
+                <a class="button aboutUs__section__offer__content__btn" href="<?php echo get_page_link(get_page_by_title('Folie stretch')->ID); ?>">
                     Szczegóły oferty
                 </a>
             </main>
@@ -169,22 +169,22 @@ get_header();
         <section class="aboutUs__section aboutUs__section--offer">
             <main class="aboutUs__section__offer__content" data-aos="fade-right">
                 <h2 class="aboutUs__section__offer__content__header">
-                    Folia stretch od polskiego producenta
+                    Opakowania przemysłowe
                 </h2>
                 <article class="aboutUs__section__offer__content__text">
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        Jesteśmy jednym z największych w regionie dystrybutorów opakowań przemysłowych.
                     </p>
                     <p>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                        W naszej ofercie posiadamy szeroką gamę takich produktów jak taśmy, worki, półrękawy, rękawy, kaptury paletowe czy folie termokurczliwe LDPM, HDPM, MDPM.
                     </p>
                 </article>
-                <a class="button aboutUs__section__offer__content__btn">
+                <a class="button aboutUs__section__offer__content__btn" href="<?php echo get_page_link(get_page_by_title('Opakowania przemysłowe')->ID); ?>">
                     Szczegóły oferty
                 </a>
             </main>
             <figure class="aboutUs__section__offer__imgWrapper" data-aos="fade-left">
-                <img class="aboutUs__section__offer__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/landing.png'; ?>" alt="benmar" />
+                <img class="aboutUs__section__offer__img" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/rekawy.png'; ?>" alt="benmar" />
             </figure>
         </section>
     </section>

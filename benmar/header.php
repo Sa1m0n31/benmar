@@ -102,23 +102,13 @@
                 <img class="whiteArrow" src="<?php echo get_bloginfo('stylesheet_directory') . '/img/white-arrow.svg'; ?>" alt="wiecej" />
                 <ul class="dropdownMenu">
                     <li class="dropdownMenu__item">
-                        <a href="<?php echo get_page_link(get_page_by_title('Folia spożywcza')->ID); ?>">
-                            Folia spożywcza
+                        <a href="<?php echo get_page_link(get_page_by_title('Folie stretch')->ID); ?>">
+                            Folia stretch
                         </a>
                     </li>
                     <li class="dropdownMenu__item">
-                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch maszynowa')->ID); ?>">
-                            Folia stretch maszynowa
-                        </a>
-                    </li>
-                    <li class="dropdownMenu__item">
-                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch jumbo')->ID); ?>">
-                            Folia stretch jumbo
-                        </a>
-                    </li>
-                    <li class="dropdownMenu__item">
-                        <a href="<?php echo get_page_link(get_page_by_title('Folia stretch ręczna')->ID); ?>">
-                            Folia stretch ręczna
+                        <a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania na roli')->ID); ?>">
+                            Worki do pakowania na roli
                         </a>
                     </li>
                     <li class="dropdownMenu__item afterNot">
@@ -132,23 +122,13 @@
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot">
-                        <a href="<?php echo get_page_link(get_page_by_title('Siatka rolnicza')->ID); ?>">
-                            Siatka rolnicza
-                        </a>
-                    </li>
-                    <li class="dropdownMenu__item beforeNot">
-                        <a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania na roli')->ID); ?>">
-                            Worki do pakowania na roli
-                        </a>
-                    </li>
-                    <li class="dropdownMenu__item beforeNot">
                         <a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania węgla')->ID); ?>">
                             Worki do pakowania węgla
                         </a>
                     </li>
                     <li class="dropdownMenu__item beforeNot afterNot">
-                        <a href="<?php echo get_page_link(get_page_by_title('Kaptury foliowe')->ID); ?>">
-                            Kaptury foliowe
+                        <a href="<?php echo get_page_link(get_page_by_title('Opakowania przemysłowe')->ID); ?>">
+                            Opakowania przemysłowe
                         </a>
                     </li>
                 </ul>

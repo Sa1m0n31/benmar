@@ -52,10 +52,13 @@
                 Przydatne linki
             </h4>
             <ul class="footer__content">
-                <li><a>Artykuły biurowe Brodnica</a></li>
-                <li><a>Artykuły biurowe Brodnica</a></li>
-                <li><a>Artykuły biurowe Brodnica</a></li>
-                <li><a>Artykuły biurowe Brodnica</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania peletu Brodnica')->ID); ?>">Worki do pakowania peletu Brodnica</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania peletu Golub-Dobrzyń')->ID); ?>">Worki do pakowania peletu Golub-Dobrzyń</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Worki do pakowania peletu Rypin')->ID); ?>">Worki do pakowania peletu Rypin</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Worki do ekogroszku Golub-Dobrzyń')->ID); ?>">Worki do ekogroszku Golub-Dobrzyń</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Worki do ekogroszku Brodnica')->ID); ?>">Worki do ekogroszku Brodnica</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Koperty kurierskie Golub-Dobrzyń')->ID); ?>">Koperty kurierskie Golub-Dobrzyń</a></li>
+                <li><a href="<?php echo get_page_link(get_page_by_title('Koperty kurierskie Brodnica')->ID); ?>">Koperty kurierskie Brodnica</a></li>
             </ul>
         </section>
     </div>
